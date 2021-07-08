@@ -29,6 +29,7 @@ p {
 }
 
 body {
+
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   background-color: #ffffff;
@@ -38,12 +39,13 @@ body {
 /* Общие классы */
 
 .container {
-  display: flex;
-  margin: 0 auto;
 
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  margin: 0 auto;
+
 }
 .list {
   padding-left: 0px;
@@ -62,8 +64,6 @@ body {
 }
 
 /* Header */
-
-/*---------Я НЕ РОЗУМІЮ, ЧОГО ЦЯ ПАРАША НЕ ХОЧЕ ПРАЦЮВАТИ-------*/
 
 /* ----ЛОГО---- */
 
@@ -92,7 +92,7 @@ body {
 
 /* ----НАВІГАЦІЯ---- */
 
-.header-list {
+.container .header-list {
   display: flex;
   align-items: center;
   margin-left: 93px;
@@ -157,8 +157,6 @@ body {
 .contacts .header-contacts-item + .header-contacts-item {
   margin-left: 50px;
 }
-
-/*-----------------------------------------------------------*/
 
 /*----ТИПУ-ГЕРОЙ---- */
 .header {
@@ -365,25 +363,14 @@ body {
 
 
 
-/* Pprtfolio */
+/* ----PORTFOLIO---- */
 
-.works-subtitle {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2em;
-  letter-spacing: 0.06em;
+.filter {
 
-  color: var(--base-color-black);
+  display: flex;
+
 }
 
-.works-text {
-  font-size: 16px;
-  line-height: 1.9em;
-
-  color: var(--secondary-color-gray);
-}
-
-/* Buttons */
 
 .filter-button {
   font-family: inherit;
@@ -402,3 +389,21 @@ body {
   background: var(--accent-color);
   color: var(--white);
 }
+
+.works-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+
+  color: var(--base-color-black);
+}
+
+.works-text {
+  font-size: 16px;
+  line-height: 1.9em;
+
+  color: var(--secondary-color-gray);
+}
+
+
