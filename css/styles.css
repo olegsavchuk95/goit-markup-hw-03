@@ -18,6 +18,12 @@ p {
   margin: 0px;
 }
 
+img {
+
+  display: block;
+
+}
+
 :root {
   --base-color-black: #212121;
 
@@ -431,7 +437,6 @@ display: flex;
 }
 
 .projects-lits-item {
-  border: 1px solid #EEEEEE;
 
   flex-basis: calc((100% / 3) - 30px);
 
@@ -441,11 +446,14 @@ display: flex;
   
 }
 
-.projects-subtitle {
+.item-style {
 
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+
+}
+
+.projects-subtitle {
 
   font-weight: 700;
   font-size: 18px;
@@ -456,8 +464,6 @@ display: flex;
 }
 
 .projects-text {
-
-  padding: 4px 24px 20px;
 
   font-size: 16px;
   line-height: 1.9em;
