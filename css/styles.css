@@ -38,14 +38,12 @@ body {
 /* Общие классы */
 
 .container {
-
   display: flex;
   margin: 0 auto;
 
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-
 }
 .list {
   padding-left: 0px;
@@ -67,58 +65,46 @@ body {
 
 /*---------Я НЕ РОЗУМІЮ, ЧОГО ЦЯ ПАРАША НЕ ХОЧЕ ПРАЦЮВАТИ-------*/
 
-  /* ----ЛОГО---- */
+/* ----ЛОГО---- */
 
 .logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.3em;
+  letter-spacing: 0.03em;
 
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.3em;
-    letter-spacing: 0.03em;
-  
-    text-decoration: none;
-  
-    color: var(--base-color-black);
-  }
+  text-decoration: none;
 
-.logo-header {
-
-  display: flex;
-  align-items: center;
-
+  color: var(--base-color-black);
 }
 
-  /* ----НАВІГАЦІЯ---- */
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+
+/* ----НАВІГАЦІЯ---- */
 
 .header-list {
-
   display: flex;
   align-items: center;
   margin-left: 93px;
-
 }
 
 .header-list .item {
-
   margin-right: 50px;
-  
 }
 
 .header-list .item:last-child {
-
   margin-right: 0px;
-
 }
 
 .header-nav-links {
-
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
 }
-
 
 .nav-links a {
   font-weight: 500;
@@ -141,11 +127,9 @@ body {
 /* ----КОНТАКТИ ХЕДЕРА---- */
 
 .contacts {
-
   display: flex;
   margin-left: auto;
   align-items: center;
-  
 
   font-weight: 500;
   font-size: 14px;
@@ -165,16 +149,13 @@ body {
 }
 
 .contacts .header-contacts-item + .header-contacts-item {
-
   margin-left: 50px;
-
 }
 
 /*-----------------------------------------------------------*/
 
-  /*----ТИПУ-ГЕРОЙ---- */
+/*----ТИПУ-ГЕРОЙ---- */
 .header {
-
   text-align: center;
   padding-top: 280px;
 
@@ -189,12 +170,10 @@ body {
 
 /* ----КНОПКА-ГЕРОЙ---- */
 .alpha-button {
-
   text-align: center;
   padding: 10px 32px;
   margin-top: 30px;
   margin-bottom: 200px;
-
 
   font-family: inherit;
 
@@ -213,20 +192,15 @@ body {
 /* ---ОСОБЕННОСТИ---- */
 
 .features-list {
-
   display: flex;
   padding-top: 94px;
-
 }
 
- .featured-lits-item:not(:last-child){
-
- margin-right: 50px;
-
+.featured-lits-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .features-subtitle {
-
   padding-top: 94px;
   padding-bottom: 10px;
 
@@ -245,8 +219,14 @@ body {
 }
 
 /* ----ЧЕМ МЫ ЗАНИМАЕМСЯ---- */
-.works-header {
 
+.works {
+
+  padding-bottom: 94px;
+
+}
+
+.works-header {
   padding-top: 94px;
   text-align: center;
 
@@ -256,36 +236,27 @@ body {
 }
 
 .works-list {
-
   display: flex;
   padding-top: 50px;
-
 }
 
 .works-list-item {
-
   display: flex;
-
 }
 
 .works-list-item:not(:last-child) {
-
   margin-right: 30px;
-
 }
-
 
 /* ----НАША КОМАНДА---- */
 
 .team {
-
-  padding-top: 94px;
+  padding-bottom: 94px;
 
   background: #f5f4fa;
 }
 
 .team-header {
-
   padding-top: 94px;
 
   font-weight: 700;
@@ -295,53 +266,60 @@ body {
 }
 
 .team-list {
-
   display: flex;
-
 }
 
 .team-list-item {
-
   padding-top: 50px;
-
 }
 
 .team-list-item:not(:last-child) {
-
   margin-right: 30px;
-
 }
 
 .team-item {
+  background-color: var(--white);
 
-  outline: 1px solid #666;
+  border-radius: 0px 0px 4px 4px;
 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-subtitle {
-
   padding-top: 30px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2em;
+  text-align: center;
 }
 
 .team-text {
-
   padding-top: 10px;
   padding-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.2em;
+  text-align: center;
 
   color: var(--secondary-color-gray);
 }
 
-/* Footer */
+/* ----ТЬФУТЕР---- */
 
 .footer {
+
+  padding-top: 50px;
+
   background-color: #2f303a;
+}
+
+
+.footer-items {
+
+  width: 1170px;
+
 }
 
 .white-word {
@@ -349,11 +327,21 @@ body {
 }
 
 .address {
+
+  padding-top: 20px;
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.7em;
 
   color: var(--white);
+}
+
+.contacts-footer {
+
+  padding-top: 9px;
+  padding-bottom: 60px;
+
 }
 
 .footer-links {
@@ -365,6 +353,9 @@ body {
 
   text-decoration: none;
 }
+
+
+
 
 /* Pprtfolio */
 
@@ -385,8 +376,6 @@ body {
 }
 
 /* Buttons */
-
-
 
 .filter-button {
   font-family: inherit;
