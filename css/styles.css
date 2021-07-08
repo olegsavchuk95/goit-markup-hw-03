@@ -26,6 +26,8 @@ p {
   --accent-color: #2196f3;
 
   --white: #ffffff;
+
+  --project-list-gap: 30px;
 }
 
 body {
@@ -420,9 +422,31 @@ display: flex;
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+
+  padding-bottom: 94px;
+
+  margin-left: calc( -1 * var(--project-list-gap));
+  margin-top: calc( -1 * var(--project-list-gap));
+
+}
+
+.projects-lits-item {
+  border: 1px solid #EEEEEE;
+
+  flex-basis: calc((100% / 3) - 30px);
+
+  margin-left: var(--project-list-gap);
+  margin-top: var(--project-list-gap);
+
+  
 }
 
 .projects-subtitle {
+
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
@@ -432,6 +456,9 @@ display: flex;
 }
 
 .projects-text {
+
+  padding: 4px 24px 20px;
+
   font-size: 16px;
   line-height: 1.9em;
 
