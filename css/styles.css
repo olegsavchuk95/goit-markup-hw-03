@@ -64,26 +64,33 @@ body {
 }
 
 /* Header */
-.logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.3em;
-  letter-spacing: 0.03em;
-
-  text-decoration: none;
-
-  color: var(--base-color-black);
-}
-
 
 /*---------Я НЕ РОЗУМІЮ, ЧОГО ЦЯ ПАРАША НЕ ХОЧЕ ПРАЦЮВАТИ-------*/
+
+  /* ----ЛОГО---- */
+
+.logo {
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.3em;
+    letter-spacing: 0.03em;
+  
+    text-decoration: none;
+  
+    color: var(--base-color-black);
+  }
+
 .logo-header {
 
-  display: block;
+  display: flex;
   align-items: center;
 
 }
+
+
+  /* ----НАВІГАЦІЯ---- */
 
 .header-list {
 
@@ -117,19 +124,7 @@ body {
 
 }
 
-.contacts {
 
-  display: flex;
-  align-items: center;
-  
-}
-
-.header-contacts-item {
-
-  justify-content: flex-end;
-  margin-left: auto;
-
-}
 
 
 
@@ -155,7 +150,15 @@ body {
   color: var(--accent-color);
 }
 
+/* ----КОНТАКТИ ХЕДЕРА---- */
+
 .contacts {
+
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
