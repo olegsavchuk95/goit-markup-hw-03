@@ -89,7 +89,6 @@ body {
 
 }
 
-
   /* ----НАВІГАЦІЯ---- */
 
 .header-list {
@@ -98,16 +97,12 @@ body {
   align-items: center;
   margin-left: 93px;
 
-  background-color: tomato;
-  
-
 }
 
 .header-list .item {
 
   margin-right: 50px;
   
-
 }
 
 .header-list .item:last-child {
@@ -124,13 +119,6 @@ body {
 
 }
 
-
-
-
-
-.white-word {
-  color: var(--white);
-}
 
 .nav-links a {
   font-weight: 500;
@@ -184,23 +172,64 @@ body {
 
 /*-----------------------------------------------------------*/
 
-/* Шапка */
+  /*----ТИПУ-ГЕРОЙ---- */
 .header {
 
-  width: 1170px;
+  text-align: center;
+  padding-top: 280px;
 
   font-weight: 700;
   font-size: 44px;
   line-height: 1.4em;
-  text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--white);
   background-color: #2f303a;
 }
 
-/* Особенности */
+/* ----КНОПКА-ГЕРОЙ---- */
+.alpha-button {
+
+  text-align: center;
+  padding: 10px 32px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+
+
+  font-family: inherit;
+
+  background-color: var(--accent-color);
+  color: var(--white);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9em;
+  border-radius: 4px;
+  border: none;
+
+  letter-spacing: 0.06em;
+}
+
+/* ---ОСОБЕННОСТИ---- */
+
+.features-list {
+
+  display: flex;
+  padding-top: 94px;
+
+}
+
+ .featured-lits-item:not(:last-child){
+
+ margin-right: 50px;
+
+}
+
 .features-subtitle {
+
+  padding-top: 94px;
+  padding-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 14em;
@@ -215,34 +244,94 @@ body {
   color: var(--secondary-color-gray);
 }
 
-/* Чем мы занимаемся */
-.what-we-do h2 {
+/* ----ЧЕМ МЫ ЗАНИМАЕМСЯ---- */
+.works-header {
+
+  padding-top: 94px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1, 16em;
-  text-align: center;
 }
 
-/* Наша команда */
+.works-list {
+
+  display: flex;
+  padding-top: 50px;
+
+}
+
+.works-list-item {
+
+  display: flex;
+
+}
+
+.works-list-item:not(:last-child) {
+
+  margin-right: 30px;
+
+}
+
+
+/* ----НАША КОМАНДА---- */
 
 .team {
+
+  padding-top: 94px;
+
   background: #f5f4fa;
 }
 
-.team h2 {
+.team-header {
+
+  padding-top: 94px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1, 16em;
   text-align: center;
 }
 
+.team-list {
+
+  display: flex;
+
+}
+
+.team-list-item {
+
+  padding-top: 50px;
+
+}
+
+.team-list-item:not(:last-child) {
+
+  margin-right: 30px;
+
+}
+
+.team-item {
+
+  outline: 1px solid #666;
+
+}
+
 .team-subtitle {
+
+  padding-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2em;
 }
 
 .team-text {
+
+  padding-top: 10px;
+  padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.2em;
 
@@ -253,6 +342,10 @@ body {
 
 .footer {
   background-color: #2f303a;
+}
+
+.white-word {
+  color: var(--white);
 }
 
 .address {
@@ -293,18 +386,7 @@ body {
 
 /* Buttons */
 
-.alpha-button {
-  font-family: inherit;
 
-  background-color: var(--accent-color);
-  color: var(--white);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9em;
-
-  letter-spacing: 0.06em;
-}
 
 .filter-button {
   font-family: inherit;
